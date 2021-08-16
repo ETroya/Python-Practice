@@ -1,8 +1,8 @@
 import random
-name= "Indecisive"
-question= "Should I eat out today"
+name= ""
+question= ""
 answer=""
-random_number = random.randint (1,9)
+random_number = random.randint (1,10)
 
 if random_number == 1:
   answer= "Yes - definitely."
@@ -21,10 +21,20 @@ elif random_number == 7:
 elif random_number == 8:
   answer="Outlook not so good"
 elif random_number == 9:
-   answer=" very doubtful" 
+  answer="very doubtful" 
+elif random_number == 10:
+  answer="Hell Yeah"   
 else: 
   answer= "Error"
-print (random_number)
-print (name + " asks: " + question)   
 
-print("Magic 8-Ball's answer: " + answer)
+if name == "":
+ print("Question:" + question)
+else: 
+    answer="Error"
+
+
+#do somethin is question is empty
+if question == "":
+  print("The Magic 8-Ball cannot provide a fortune unless you ask it something")
+else:
+  print("Magic 8-Ball's answer: " + answer)
