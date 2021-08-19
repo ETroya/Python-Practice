@@ -27,13 +27,14 @@ elif random_number == 10:
 else: 
   answer= "Error"
 
+#changing of the name
 if name == "":
  print("Question:" + question)
 else: 
     answer="Error"
 
 
-#do somethin is question is empty
+#If the box for questions is empty
 if question == "":
   print("The Magic 8-Ball cannot provide a fortune unless you ask it something")
 else:
